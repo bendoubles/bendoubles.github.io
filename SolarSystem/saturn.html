@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Orbitron:400,900,700,500|Open+Sans:400,600,700,300,800&subset=latin,greek' rel='stylesheet' type='text/css'>
+<link href="topLevelStyle.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>Saturn</title>
+<style type="text/css">
+<!--
+
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	float:left;
+	width: 100%;
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	overflow: hidden; /* this declaration makes the .container clear all floated columns within it. */
+}
+
+p {
+	margin: 0 inherit;
+}
+
+.lineT {
+	top: -90px;
+	left:2%;
+	width:5px;
+	height:100%;
+	font-size: 15px;
+	position:absolute;
+}
+
+.lineI {
+	top: -60px;
+	right:3%;
+	width:5px;
+	height:100%;
+	font-size: 15px;
+	position:absolute;
+}
+
+.lineE {
+	top: -75px;
+	right:18%;
+	width:5px;
+	height:100%;
+	font-size: 15px;
+	position:absolute;
+}
+
+.lineM {
+	top: -40px;
+	width:5px;
+	height:100%;
+	font-size: 15px;
+	position:absolute;
+	left: 17%;
+}
+
+.lineD {
+	top: -40px;
+	width:5px;
+	height:100%;
+	font-size: 15px;
+	position:absolute;
+	left: 10%;
+}
+
+.lineTe {
+	top: -50px;
+	width:5px;
+	height:100%;
+	font-size: 15px;
+	position:absolute;
+	right: 13%;
+}
+
+.lineR {
+	top: -30px;
+	width:5px;
+	height:100%;
+	font-size: 15px;
+	position:absolute;
+	right: 8%;
+}
+
+
+.Space {
+	width: 100%;
+	background-color:#000;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.ringsSpace {
+	width: 100%;
+	margin: 0;
+	position:absolute;
+	left:0;
+	right:0;
+	
+}
+.ringsSpace2 {
+	width: 100%;
+	margin: 0;
+	position:absolute;
+	left:0;
+	right:0;
+	top:192px;
+	z-index:-1;
+}
+
+.rings {
+	width: 60%;
+	background-color: #000;
+	color: #b8aba2;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.saturn {
+	width: 20%;
+	background-color:#efe5c2;
+	margin: 0 auto;
+}
+
+.saturnOverRings {
+	width: 33.333%;
+	background-color:#efe5c2;
+	margin: 0 auto;
+}
+
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background-color: #93A5C4;
+	padding: 10px 0;
+}
+
+.layer1{
+	width:100%;
+	background-color: #a44579;
+	height:5px;
+}
+.layer2{
+	width:100%;
+	background-color: #b68a81;
+	height:26px;
+	text-align:center;
+	color:#a44579;
+}
+.layer3{
+	width:100%;
+	background-color: #DCD3C3;
+	height:10px;
+}
+.layer4{
+	width:100%;
+	background-color: #dcccb1;
+	height:35px;
+}
+.layer5{
+	width:100%;
+	background-color: #efe5c2;
+	height:50px;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+ h4, h3, h2{
+	padding: 0;
+	margin: 0;
+}
+
+h5{
+	padding-top:5px;
+	margin: 0;
+}
+
+.titan {
+	color:#e4a134;
+}
+
+.ice{ 
+	color: #eaf1ff;
+}
+.dirt{
+	color:#fff;
+}
+
+-->
+</style><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div class="container">
+	<div class="Space">
+        <br><br>
+        
+    </div>
+	<div class="saturn">
+        <div class="layer1"></div>
+        <div class="layer2"><h5 class="layer2">Saturn has a Hexagon</h5></div>
+        <div class="layer3"></div>
+        <div class="layer4"></div>
+        <div class="layer5"></div>
+        <div class="ringsSpace">
+        	<div class="lineT"><a href="titan.html"><h2 class="titan">T i t a n</h2></a></div>
+            <div class="lineM"><h4><a href="mimas.html">M i m a s</a></h4></div>
+            <div class="lineE"><h4><a href="enceladus.html">E n c e l a d u s</a></h4></div>
+            <div class="lineTe"><h4><a href="dione.html">T e t h y s</a></h4></div>
+            <div class="lineD"><h4><a href="dione.html">D i o n e</a></h4></div>
+            <div class="lineR"><h4><a href="dione.html">R h e a</a></h4></div>
+            <div class="lineI"><h4><a href="iapetus.html">I a p e t u s</a></h4></div>
+          	<div class="rings">
+                <p>D Ring Cassini Division A Ring Phoebe Ring C Ring  
+                Pallene Ring  Maxwell Ringlet F Ring Titan Ringlet Roche Division Kuiper Janus Ring E Ring G Ring B Ring</p>
+        	</div>        
+        </div>
+        <div class="ringsSpace2">
+          	<div class="rings">
+                <p>D Ring Cassini Division A Ring Phoebe Ring C Ring  
+                Pallene Ring  Maxwell Ringlet F Ring Titan Ringlet Roche Division Kuiper Janus Ring E Ring G Ring B Ring</p>
+        	</div>        
+        </div>
+        <div class="layer5"></div>
+        <div class="layer5"></div>
+        <div class="layer4"></div>
+        <div class="layer3"></div>
+        <div class="layer2"><h5 class="layer2">Theres nothing at the other Pole</h5></div>
+        <div class="layer1"></div>
+    </div>
+    <div class="Space">
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2><a href="outerSolar.html">The Outer System</a></h2></div>
+</div>
+</body>
+</html>

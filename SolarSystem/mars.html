@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Orbitron:400,900,700,500|Open+Sans:400,600,700,300,800&subset=latin,greek' rel='stylesheet' type='text/css'>
+<link href="topLevelStyle.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>Mars</title>
+
+<style type="text/css">
+<!--
+
+.h4 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight:700;
+}
+	
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	float:left;
+	width: 90%;
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #000;
+	margin: 0; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	overflow: hidden; /* this declaration makes the .container clear all floated columns within it. */
+}
+
+.line {
+	float:left;
+	width:5px;
+	height:100%;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background-color: #000;
+	padding-bottom: 10px;
+
+}
+.sidebar1nav {
+	float: left;
+	width: 10%;
+	background-color: #000;
+	padding-bottom: 10px;
+}
+.contentM {
+	padding: 10px 0;
+	width: 80%;
+	float: left;
+	background-color: #dc8361;
+	color:#ec8f6e;
+}
+.content {
+	padding: 10px 0;
+	width: 80%;
+	float: left;
+}
+
+.contentBelt {
+	padding: 10px 0;
+	width: 90%;
+	float: left;
+	
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background-color: #93A5C4;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.footer {
+	float:left;
+	width: 100%;
+	height:20px;
+	margin: 0;
+	overflow:hidden;
+	margin-bottom: 20px;
+}
+
+.header {
+	float:left;
+	width: 82%;
+	height:25px;
+	margin: 0;
+	overflow:hidden;
+	margin-top:20px;
+}
+
+-->
+</style><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div class="container">
+	<div class="header">
+    <p>-----------------------------------------------------<a href="404.html">DEIMOS</a>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    </div>
+    <div class="content">
+    <div class="header">
+    <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    </div>
+
+    <div class="contentM">
+    <p>Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.
+
+Until the first successful Mars flyby in 1965 by Mariner 4, many speculated about the presence of liquid water on the planet's surface. This was based on observed periodic variations in light and dark patches, particularly in the polar latitudes, which appeared to be seas and continents; long, dark striations were interpreted by some as irrigation channels for liquid water. These straight line features were later explained as optical illusions, though geological evidence gathered by unmanned missions suggests that Mars once had large-scale water coverage on its surface at some earlier stage of its life. In 2005, radar data revealed the presence of large quantities of water ice at the poles and at mid-latitudes. The Mars rover Spirit sampled chemical compounds containing water molecules in March 2007. The Phoenix lander directly sampled water ice in shallow Martian soil on July 31, 2008.
+
+Mars is host to seven functioning spacecraft: five in orbit—2001 Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, MAVEN and Mars Orbiter Mission—and two on the surface—Mars Exploration Rover <font class="h4">Opportunity</font> and the Mars Science Laboratory <font class="h4">Curiosity</font>. Defunct spacecraft on the surface include MER-A Spirit and several other inert landers and rovers such as the Phoenix lander, which completed its mission in 2008. Observations by the Mars Reconnaissance Orbiter have revealed possible flowing water during the warmest months on Mars.[25] In 2013, NASA's Curiosity rover discovered that Mars's soil contains between 1.5% and 3% water by mass (about two pints of water per cubic foot or 33 liters per cubic meter, albeit attached to other compounds and thus not freely accessible).
+
+Mars can easily be seen from Earth with the naked eye, as can its reddish coloring. Its apparent magnitude reaches −3.0, which is surpassed only by Jupiter, Venus, the Moon, and the Sun. Optical ground-based telescopes are typically limited to resolving features about 300 kilometers (190 mi) across when Earth and Mars are closest because of Earth's atmosphere.Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.
+
+Until the first successful Mars flyby in 1965 by Mariner 4, many speculated about the presence of liquid water on the planet's surface. This was based on observed periodic variations in light and dark patches, particularly in the polar latitudes, which appeared to be seas and continents; long, dark striations were interpreted by some as irrigation channels for liquid water. These straight line features were later explained as optical illusions, though geological evidence gathered by unmanned missions suggests that Mars once had large-scale water coverage on its surface at some earlier stage of its life. In 2005, radar data revealed the presence of large quantities of water ice at the poles and at mid-latitudes. The Mars rover Spirit sampled chemical compounds containing water molecules in March 2007. The Phoenix lander directly sampled water ice in shallow Martian soil on July 31, 2008.
+
+Mars is host to seven functioning spacecraft: five in orbit—2001 Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, MAVEN and Mars Orbiter Mission—and two on the surface—Mars Exploration Rover <font class="h4">Spirit</font> and the Mars Science Laboratory <font class="h4">Olympus Mons</font>. Defunct spacecraft on the surface include MER-A Spirit and several other inert landers and rovers such as the Phoenix lander, which completed its mission in 2008. Observations by the Mars Reconnaissance Orbiter have revealed possible flowing water during the warmest months on Mars.[25] In 2013, NASA's Curiosity rover discovered that Mars's soil contains between 1.5% and 3% water by mass (about two pints of water per cubic foot or 33 liters per cubic meter, albeit attached to other compounds and thus not freely accessible).
+
+Mars can easily be seen from Earth with the naked eye, as can its reddish coloring. Its apparent magnitude reaches −3.0, which is surpassed only by Jupiter, Venus, the Moon, and the Sun. Optical ground-based telescopes are typically limited to resolving features about 300 kilometers (190 mi) across when Earth and Mars are closest because of Earth's atmosphere.Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.
+
+Until the first successful Mars flyby in 1965 by Mariner 4, many speculated about the presence of liquid water on the planet's surface. This was based on observed periodic variations in light and dark patches, particularly in the polar latitudes, which appeared to be seas and continents; long, dark striations were interpreted by some as irrigation channels for liquid water. These straight line features were later explained as optical illusions, though geological evidence gathered by unmanned missions suggests that Mars once had large-scale water coverage on its surface at some earlier stage of its life. In 2005, radar data revealed the presence of large quantities of water ice at the poles and at mid-latitudes. The Mars rover Spirit sampled chemical compounds containing water molecules in March 2007. The Phoenix lander directly sampled water ice in shallow Martian soil on July 31, 2008.
+
+Mars is host to seven functioning spacecraft: five in orbit—2001 Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, MAVEN and Mars Orbiter Mission—and two on the surface—Mars Exploration Rover <font class="h4">Valles Marineris</font> and the Mars Science Laboratory <font class="h4">Ice Cap</font>. Defunct spacecraft on the surface include MER-A Spirit and several other inert landers and rovers such as the Phoenix lander, which completed its mission in 2008. Observations by the Mars Reconnaissance Orbiter have revealed possible flowing water during the warmest months on Mars.[25] In 2013, NASA's Curiosity rover discovered that Mars's soil contains between 1.5% and 3% water by mass (about two pints of water per cubic foot or 33 liters per cubic meter, albeit attached to other compounds and thus not freely accessible).
+
+Mars can easily be seen from Earth with the naked eye, as can its reddish coloring. Its apparent magnitude reaches −3.0, which is surpassed only by Jupiter, Venus, the Moon, and the Sun. Optical ground-based telescopes are typically limited to resolving features about 300 kilometers (190 mi) across when Earth and Mars are closest because of Earth's atmosphere.Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.
+
+Until the first successful Mars flyby in 1965 by Mariner 4, many speculated about the presence of liquid water on the planet's surface. This was based on observed periodic variations in light and dark patches, particularly in the polar latitudes, which appeared to be seas and continents; long, dark striations were interpreted by some as irrigation channels for liquid water. These straight line features were later explained as optical illusions, though geological evidence gathered by unmanned missions suggests that Mars once had large-scale water coverage on its surface at some earlier stage of its life. In 2005, radar data revealed the presence of large quantities of water ice at the poles and at mid-latitudes. The Mars rover Spirit sampled chemical compounds containing water molecules in March 2007. The Phoenix lander directly sampled water ice in shallow Martian soil on July 31, 2008.
+
+Mars is host to seven functioning spacecraft: five in orbit—2001 Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, MAVEN and Mars Orbiter Mission—and two on the surface—Mars Exploration Rover <font class="h4">Opportunity</font> and the Mars Science Laboratory <font class="h4">Curiosity</font>. Defunct spacecraft on the surface include MER-A Spirit and several other inert landers and rovers such as the Phoenix lander, which completed its mission in 2008. Observations by the Mars Reconnaissance Orbiter have revealed possible flowing water during the warmest months on Mars.[25] In 2013, NASA's Curiosity rover discovered that Mars's soil contains between 1.5% and 3% water by mass (about two pints of water per cubic foot or 33 liters per cubic meter, albeit attached to other compounds and thus not freely accessible).
+
+Mars can easily be seen from Earth with the naked eye, as can its reddish coloring. Its apparent magnitude reaches −3.0, which is surpassed only by Jupiter, Venus, the Moon, and the Sun. Optical ground-based telescopes are typically limited to resolving features about 300 kilometers (190 mi) across when Earth and Mars are closest because of Earth's atmosphere.Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.
+
+Until the first successful Mars flyby in 1965 by Mariner 4, many speculated about the presence of liquid water on the planet's surface. This was based on observed periodic variations in light and dark patches, particularly in the polar latitudes, which appeared to be seas and continents; long, dark striations were interpreted by some as irrigation channels for liquid water. These straight line features were later explained as optical illusions, though geological evidence gathered by unmanned missions suggests that Mars once had large-scale water coverage on its surface at some earlier stage of its life. In 2005, radar data revealed the presence of large quantities of water ice at the poles and at mid-latitudes. The Mars rover Spirit sampled chemical compounds containing water molecules in March 2007. The Phoenix lander directly sampled water ice in shallow Martian soil on July 31, 2008.
+
+Mars is host to seven functioning spacecraft: five in orbit—2001 Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, MAVEN and Mars Orbiter Mission—and two on the surface—Mars Exploration Rover <font class="h4">Opportunity</font> and the Mars Science Laboratory <font class="h4">Curiosity</font>. Defunct spacecraft on the surface include MER-A Spirit and several other inert landers and rovers such as the Phoenix lander, which completed its mission in 2008. Observations by the Mars Reconnaissance Orbiter have revealed possible flowing water during the warmest months on Mars.[25] In 2013, NASA's Curiosity rover discovered that Mars's soil contains between 1.5% and 3% water by mass (about two pints of water per cubic foot or 33 liters per cubic meter, albeit attached to other compounds and thus not freely accessible).
+
+Mars can easily be seen from Earth with the naked eye, as can its reddish coloring. Its apparent magnitude reaches −3.0, which is surpassed only by Jupiter, Venus, the Moon, and the Sun. Optical ground-based telescopes are typically limited to resolving features about 300 kilometers (190 mi) across when Earth and Mars are closest because of Earth's atmosphere.Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka, a Mars trojan.
+
+Until the first successful Mars flyby in 1965 by Mariner 4, many speculated about the presence of liquid water on the planet's surface. This was based on observed periodic variations in light and dark patches, particularly in the polar latitudes, which appeared to be seas and continents; long, dark striations were interpreted by some as irrigation channels for liquid water. These straight line features were later explained as optical illusions, though geological evidence gathered by unmanned missions suggests that Mars once had large-scale water coverage on its surface at some earlier stage of its life. In 2005, radar data revealed the presence of large quantities of water ice at the poles and at mid-latitudes. The Mars rover Spirit sampled chemical compounds containing water molecules in March 2007. The Phoenix lander directly sampled water ice in shallow Martian soil on July 31, 2008.
+
+Mars is host to seven functioning spacecraft: five in orbit—2001 Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, MAVEN and Mars Orbiter Mission—and two on the surface—Mars Exploration Rover <font class="h4">Opportunity</font> and the Mars Science Laboratory <font class="h4">Curiosity</font>. Defunct spacecraft on the surface include MER-A Spirit and several other inert landers and rovers such as the Phoenix lander, which completed its mission in 2008. Observations by the Mars Reconnaissance Orbiter have revealed possible flowing water during the warmest months on Mars.[25] In 2013, NASA's Curiosity rover discovered that Mars's soil contains between 1.5% and 3% water by mass (about two pints of water per cubic foot or 33 liters per cubic meter, albeit attached to other compounds and thus not freely accessible).
+
+Mars can easily be seen from Earth with the naked eye, as can its reddish coloring. Its apparent magnitude reaches −3.0, which is surpassed only by Jupiter, Venus, the Moon, and the Sun. Optical ground-based telescopes are typically limited to resolving features about 300 kilometers (190 mi) across when Earth and Mars are closest because of Earth's atmosphere.</p>
+    </div>
+    <div class="sidebar"><div class="line">
+    <p>| | | | | | | | | | <a href="404.html">P H O B O S</a> | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |</p>
+    </div></div>
+    </div>
+    <div class="sidebar"><div class="line">
+    <p>| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |</p>
+    </div></div>
+</div>
+<div class="sidebar1nav"><div class="line"><h2><a href="innerSolar.html">T h e &nbsp; I n n e r &nbsp; S y s t e m</a></h2></div></div>
+</body>
+</html>

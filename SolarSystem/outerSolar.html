@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Orbitron:400,900,700,500|Open+Sans:400,600,700,300,800&subset=latin,greek' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Outer Solar System</title>
+<style type="text/css">
+<!--
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	list-style:none;
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 96px;
+}
+
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 48px;
+}
+
+h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #F00;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 90%;
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #000;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	overflow: hidden; /* this declaration makes the .container clear all floated columns within it. */
+}
+
+.line {
+	width:5px;
+	height:100%;
+	text-align:center;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background-color: #000;
+	padding-bottom: 10px;
+
+}
+.sidebar1nav {
+	float: left;
+	width: 10%;
+	background-color: #000;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 80%;
+	float: left;
+}
+
+.contentBelt {
+	padding: 10px 0;
+	width: 90%;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background-color: #93A5C4;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.footer {
+	float:left;
+	width: 100%;
+	height:20px;
+	margin: 0;
+	overflow:hidden;
+	margin-bottom: 20px;
+}
+
+.header {
+	float:left;
+	width: 100%;
+	height:25px;
+	margin: 0;
+	overflow:hidden;
+	margin-top:20px;
+}
+-->
+</style><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]--></head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1nav">
+    <div class="line"><h2><a href="oortCloud.html">T h e &nbsp; O o r t &nbsp; C l o u d</a></h2></div>
+    <!-- end .sidebar1 --></div>
+  <div class="contentBelt">
+      <div class="headerBelt"><p>r u t u k k i p u l t p i t k l t u u u r u u i l u i b e t l e k b u i b u i e u t k k r e u r e l l r r t k t i t u e l u p p u b k e r p e b i l i u t b e t t r i r l i u l u i u l t u t p p b e u p r e b l t r t k r u p l k i l u l l u t e i k i b e r l p e l i u k b k l k u u r e k u l r e r l r r r i b k p t t p l b k r r e e b r t k p i r l k u i k r i k l l k u p r t e k u u e b e t l t b k u l k i r t p t u r e i i k t k e l r i p u e l e i e e u p l b t p p t k e p b l e b u r i e u l b p p u l t p e e e b t t u u b i r p r b k i i l i t u t b e e t u t u i u i e l t i b b p b t u u e i t u e i p t p b b p t p r k k l e e e u i u u l t b k t b k i r i p p e t t b r e p i l u l t k r p k i p u b k r k r l e l t p k r k l u b e u u t t b l i e p p k e t u e u t e e t t b t t t p p u t r b p b u p r t r k k l k p r i k b r b b u k e r b k r k l t r l b p t p e i t t b e t e b u p e p i u b r t i i i u i l b u p e t b i t p t b t b u e t t u l i e t i l b r p i i k l k l b u p p e u i r i u l i r r e i r r l k b k u u e r b p e r b p t e u l k p t u u k r u p l i e t t i i k p p l k t t u t u u i r t l k p i r t t t p e e e e b r i b t t u p i t r l i t t i i e k r t b b b e e l p i t l p k p p e i t b l u r u i p b p t i u i r b e b u k k t e b e p l l t l k b t p b t e l b l r l k u u r e t b p l l i i t t r l i t u e e i l u p b r b t u r t e p p k b e i k r b p i u i i l b p i p t i e l r l b e b e l p r k e k p t b i k k e u b e e r e p i k r t b l i b i p r i p i t b e u l k t r b u b b u e p t b u i e r k e b r u u t i p k p e e t t u u t b e p r e i r b i i k k u t u e e e l e e i l t e r u e l u b b p r r t l t k u l r t l b l u l e i t r u u u i b l b k l p u k r r t r e b l k i l u i k r l b u k t u r t e e r l b r t p b e t r e i p l b e t r u t t t e l t p t b e t u t k u b l u b e t l r u i k l u e r i r i k l l u r p r u k p t u l i k k k t p e r i u p r l l p k l r r b l e u u u k r u e p p b e u e u r i i r k k r u u e r t t e u l r b i b r b </p> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <p>r u t u k k i p u l t p i t k l t u u u r u u i l u i b e t l e k b u i b u i e u t k k r e u r e l l r r t k t i t u e l u p p u b k e r p e b i l i u t b e t t r i r l i u l u i u l t u t p p b e u p r e b l t r t k r u p l k i l u l l u t e i k i b e r l p e l i u k b k l k u u r e k u l r e r l r r r i b k p t t p l b k r r e e b r t k p i r l k u i k r i k l l k u p r t e k u u e b e t l t b k u l k i r t p t u r e i i k t k e l r i p u e l e i e e u p l b t p p t k e p b l e b u r i e u l b p p u l t p e e e b t t u u b i r p r b k i i l i t u t b e e t u t u i u i e l t i b b p b t u u e i t u e i p t p b b p t p r k k l e e e u i u u l t b k t b k i r i p p e t t b r e p i l u l t k r p k i p u b k r k r l e l t p k r k l u b e u u t t b l i e p p k e t u e u t e e t t b t t t p <a href="pluto.html">p l u t o</a> r b p b u p r t r k k l k p r i k b r b b u k e r b k r k l t r l b p t p e i t t b e t e b u p e p i u b r t i i i u i l b u p e t b i t p t b t b u e t t u l i e t i l b r p i i k l k l b u p p e u i r i u l i r r e i r r l k b k u u e r b p e r b p t e u l k p t u u k r u p l i e t t i i k p p l k t t u t u u i r t l k p i r t t t p e e e e b r i b t t u p i t r l i t t i i e k r t b b b e e l p i t l p k p p e i t b l u r u i p b p t i u i r b e b u k k t e b e p l l t l k b t p b t e l b l r l k u u r e t b p l l i i t t r l i t u e e i l u p b r b t u r t e p p k b e i k r b p i u i i l b p i p t i e l r l b e b e l p r k e k p t b i k k e u b e e r e p i k r t b l i b i p r i p i t b e u l k t r b u b b u e p t b u i e r k e b r u u t i p k p e e t t u u t b e p r e i r b i i k k u t u e e e l e e i l t e r u e l u b b p r r t l t k u l r t l b l u l e i t r u u u i b l b k l p u k r r t r e b l k i l u i k r l b u k t u r t e e r l b r t p b e t r e i p l b e t r u t t t e l t p t b e t u t k u b l u b e t l r u i k l u e r i r i k l l u r p r u k p t u l i k k k t p e r i u p r l l p k l r r b l e u u u k r u e p p b e u e u r i i r k k r u u e r t t e u l r b i b r b p r t e k u u e b e t l t b k u l k i r t p t u r e i i k t k e l r i p u e l e i e e u p l b t p p t k e p b l e b u r i e u l b p p u l t p e e e b t t u u b i r p r b k i i l i t u t b e e t u t u i u i e l t i b b p b t u u e i t u e i p t p b b p t p r k k l e e e u i u u l t b k t b k i r i p p e t t b r e p i l u l t k r p k i p u b k r k r l e l t p k r k l u b e u u t t b l i e p p k e t u e u t e e t t b t t t p p u t r b p b u p r t r k k l k p r i k b r b b u k e r b k r k l t r l b p t p e i t t b e t e b u p e p i u b r t i i i u i l b u p e t b i t p t b t b u e t t u l i e t i l b r p i i k l k l b u p p e u i r i u l i r r e i r r l k b k u u e r b b k u u e r b p e r b p t e u l k p t u u k r u p l i e t t i i k p p l k t t u t u u i r t l k p i r t t t p e e e e b r i b t t u p i t r l i t t i i e k r t b b b e e l p i t l p k p p e i t b l u r u i p b p t i u i r b e b u k k t e b e p l l t l k b t p b t e l b l r l k u u r e t b p l l i i t t r l i t u e e i l u p b r b t u r t e p p k b e i k r b p i u i i l b p i p t i e l r l b e b e l p r k e k p t b i k k e u b e e r e p i k r t b l i b i p r i p i t b e u l k t r b u b b u e p t b u i e r k e b r u u t i p k p e e t t u u t b e p r e i r b i i k k u t u e e e l e e i l t e r u e l u b b p r r t l t k u l r t l b l u l e i </p> 
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <div class="header"><p class="orbit">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"><div class="line">
+    <p>| | | | | | | | | | | | <a href="neptune.html">N E P T U N E</a> | | | | | | | | | | | | | | | </p></div>
+    </div>
+  <div class="content">
+        <div class="header"><p>--------------------------------------------------<a href="uranus.html">U R A N U S</a>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"><div class="line">
+    <p>| | | | | | | | | | | | | | | | | | | | | | |  | | | | | | </p></div>
+    </div>
+  <div class="content">
+        <div class="header"><p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"> <div class="line">
+    <p>| | | |  | | | | | | | | | | | | | | | | |</p></div>
+    </div>
+  <div class="content">
+        <div class="header"><p>-------t r o j a n s-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"><div class="line">
+    <p> | | | | <a href="jupiter.html">J U P I T E R</a> | | | |</p></div>
+  </div>
+  <div class="content">
+    <div class="headerBelt"><p>e e o a o i a a e r o a t o i t a o t s i d d o e a t s o o e t r r i i s o t t s t t e r i a r e a d d a d a o t s s r d a o o e r d i d</p>
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <p> o i e a t s i o a t a <a href="404.html">c e r e s</a> a o a s a t e e e i r d t r r </p>
+  </div>
+  <div class="content">
+    <h2><a href="innerSolar.html">InnerSystem</a></h2>
+    <!-- end .content --></div>
+  <div class="footerBelt">
+    <p> t s o o e t r r i i s o t t s t t e r i a r e a d d a d a o t s s r d a o o e r d i d e s a i e r t o e t e o s o e t r e a d i a r e r e e d s a t i e e e t e e</p>
+    <!-- end .footer --></div>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p> -------g r e e k s-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>----------<a href="saturn.html">S A T U R N</a>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div></div>
+  <div class="footerBelt">
+    <p>r u t u k k i p u l t p i t k l t u u u r u u i l u i b e t l e k b u i b u i e u t k k r e u r e l l r r t k t i t u e l u p p u b k e r p e b i l i u t b e t t r i r l i u l u i u l t u t p p b e u p r e b l t r t k r u p l k i l u l l u t e i k i b e r l p e l i u k b k l k u u r e k u l r e r l r r r i b k p t t p l b k r r e e b r t k p i r l k u i k r i k l l k u p r t e k u u e b e t l t b k u l k i r t p t u r e i i k t k e l r i p u e l e i e e u p l b t p p t k e p b l e b u r i e u l b p p u l t p e e e b t t u u b i r p r b k i i l i t u t b e e t u t u i u i e l t i b b p b t u u e i t u e i p t p b b p t p r k k l e e e u i u u l t b k t b k i r i p p e t t b r e p i l u l t k r p k i p u b k r k r l e l t p k r k l u b e u u t t b l i e p p k e t u e u t e e t t b t t t p p u t r b p b u p r t r k k l k p r i k b r b b u k e r b k r k l t r l b p t p e i t t b e t e b u p e p i u b r t i i i u i l b u p e t b i t p t b t b u e t t u l i e t i l b r p i i k l k l b u p p e u i r i u l i r r e i r r l k b k u u e r b p e r b p t e u l k p t u u k r u p l i e t t i i k p p l k t t u t u u i r t l k p i r t t t p e e e e b r i b t t u p i t r l i t t i i e k r t b b b e e l p i t l p k p p e i t b l u r u i p b p t i u i r b e b u k k t e b e p l l t l k b t p b t e l b l r l k u u r e t b p l l i i t t r l i t u e e i l u p b r b t u r t e p p k b e i k r b p i u i i l b p i p t i e l r l b e b e l p r k e k p t b i k k e u b e e r e p i k r t b l i b i p r i p i t b e u l k t r b u b b u e p t b u i e r k e b r u u t i p k p e e t t u u t b e p r e i r b i i k k u t u e e e l e e i l t e r u e l u b b p r r t l t k u l r t l b l u l e i t r u u u i b l b k l p u k r r t r e b l k i l u i k r l b u k t u r t e e r l b r t p b e t r e i p l b e t r u t t t e l t p t b e t u t k u b l u b e t l r u i k l u e r i r i k l l u r p r u k p t u l i k k k t p e r i u p r l l p k l r r b l e u u u k r u e p p b e u e u r i i r k k r u u e r t t e u l r b i b r b </p> 
+    <!-- end .footer --></div></div>
+  <!-- end .container --></div>
+</body>
+</html>

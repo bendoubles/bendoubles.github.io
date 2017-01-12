@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Orbitron:400,900,700,500|Open+Sans:400,600,700,300,800&subset=latin,greek' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="topLevelStyle.css" rel="stylesheet" type="text/css" />
+<title>Inner Solar System</title>
+<style type="text/css">
+<!--
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 90%;
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #000;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	overflow: hidden; /* this declaration makes the .container clear all floated columns within it. */
+}
+
+.line {
+	float:left;
+	width:5px;
+	height:100%;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background-color: #000;
+	padding-bottom: 10px;
+
+}
+.sidebar1nav {
+	float: left;
+	width: 10%;
+	background-color: #000;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 80%;
+	float: left;
+}
+
+.contentBelt {
+	padding: 10px 0;
+	width: 90%;
+	float: left;
+	
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background-color: #93A5C4;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.footer {
+	float:left;
+	width: 100%;
+	height:20px;
+	margin: 0;
+	overflow:hidden;
+	margin-bottom: 20px;
+}
+
+.header {
+	float:left;
+	width: 100%;
+	height:25px;
+	margin: 0;
+	overflow:hidden;
+	margin-top:20px;
+}
+
+-->
+</style>
+
+<!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]--></head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1nav">
+    <div class="line"><h2><a href="outerSolar.html">T h e &nbsp; O u t e r &nbsp; S y s t e m</a></h2></div>
+    <!-- end .sidebar1 --></div>
+  <div class="contentBelt">
+      <div class="headerBelt"><p>d s r s e e e t e e r o s i r t d r d d d t d t t o e t o i r a s e e t t e s e a r d s e i i s r a o i t o i s s r a d a d a d r i e o r r t d a t i a s a i a e i r d r r e o r s a o s a r s o e a o i o d d i t t t o o t t d a r i i o d d o i i s t s a i s e e t s t i a e e e o t a s o o t r r r e r e d a s t d e o t t t i d i a r a d a i a i d i s s s d d d e r a i o t t e d o a e t a o o e d a d r a s o d s d s i r o i d e t i o i o r e r s e a o s o r r s o i d t r a d i e e o o t i o a a t e o i i d e d a i d r t o i t i t d s i s r r a r a d o e r i a t a r e o a o t e t e o i e a r d o s r r d s e s o r o d i t s i o a t r o e s o a r s a o a s a t t r r a e e e i t d t d r d t r r s r d a o s a s d s i i s r o o o t e d t e i s e r d o i o i t t d d e e o a o i a a e r o a t o i t a o t s i d d o e a t s o o e t r r i i s o t t s t t e r i a r e a d d a d a o t s s r d a o o e r d i d e s a i e r t o e t e o s o e t r e a d i a r e r e e d s a t i e e e t e e o a d d a o i e t a r d s e e d o i s o d s s s t d d e e t o t e d e i e s o s a d o t o d t e d r a i e i i d a a t o e r o e a r e a a t o a e a o o t r t a t s a i a r t d r d t r t e a s o e r i t r r s i i a r r a r t t a o s i t o e r t a s o r o s d s s d e o a i i s d t r d i r d a t a i d e s d s t r r i d o s t r r o s t i o a d t t r a i r t a d d r a s i o t r d t r i o t e a r r t i s e r s d s i e o i o d o r t r s r e r i e r d i e i r e d a a a i i e i a e r i t o t o t r e e d r d i d t a t s e t s d a t a o t r e a d o i e s r e d s e s a i o t a o e e d a a t i d e e i o r o e a i t o o s t d i r s s a a t e r s o r a t a e e t o a r r s i s a a e o d d t d i s r r r o o s a t o i e r o i s o s d s s e s d t d e r i d d r s t s e i o o d e i o s e a e d i t e i o a t e a d i t i d i d o t d o a e d r d t d r o i s d a o i o t i i d o d d a s i a e r e t e t i a i s t d t i a r t t i a t e e i t a d e d d r d s a i e a t a e i s o r i s r t s d a a i i e e o r o e d i a d r o o r r s </p> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <p>d s r s e e e t e e r o s i r t d r d d d t d t t o e t o i r a s e e t t e s e a r d s e i i s r a o i t o i s s r a d a d a d r i e o r r t d a t i a s a i a e i r d r r e o r s a o s a r s o e a o i o d d i t t t o o t t d a r i i o d d o i i s t s a i s e e t s t i a e e e o t a s o o t r r r e r e d a s t d e o t t t i d i a r a d a i a i d i s s s d d d e r a i o t t e d o a e t a o o e d a d r a s o d s d s i r o i d e t i o i o r e r s e a o s o r r s o i d t r a d i e e o o t i o a a t e o i i d e d a i d r t o i t i t d s i s r r a r a d o e r i a t a r e o a o t e t e o i e a r d o s r r d s e s o r o d i t s i o a t r o e s o a <a href="404.html">c e r e s</a> a o a s a t t r r a e e e i t d t d r d t r r s r d a o s a s d s i i s r o o o t e d t e i s e r d o i o i t t d d e e o a o i a a e r o a t o i t a o t s i d d o e a t s o o e t r r i i s o t t s t t e r i a r e a d d a d a o t s s r d a o o e r d i d e s a i e r t o e t e o s o e t r e a d i a r e r e e d s a t i e e e t e e o a d d a o i e t a r d s e e d o i s o d s s s t d d e e t o t e d e i e s o s a d o t o d t e d r a i e i i d a a t o e r o e a r e a a t o a e a o o t r t a t s a i a r t d r d t r t e a s o e r i t r r s i i a r r a r t t a o s i t o e r t a s o r o s d s s d e o a i i s d t r d i r d a t a i d e s d s t r r i d o s t r r o s t i o a d t t r a i r t a d d r a s i o t r d t r i o t e a r r t i s e r s d s i e o i o d o r t r s r e r i e r d i e i r e d a a a i i e i a e r i t o t o t r e e d r d i d t a t s e t s d a t a o t r e a d o i e s r e d s e s a i o t a o e e d a a t i d e e i o r o e a i t o o s t d i r s s a a t e r s o r a t a e e t o a r r s i s a a e o d d t d i s r r r o o s a t o i e r o i s o s d s s e s d t d e r i d d r s t s e i o o d e i o s e a e d i t e i o a t e a d i t i d i d o t d o a e d r d t d r o i s d a o i o t i i d o d d a s i a e r e t e t i a i s t d t i a r t t i a t e e i t a d e d d r d s a i e a t a e i s o r i s r t s d a a i i e e o r o e d i a d r o o r r s </p> 
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <div class="header"><p class="orbit">--------------------------------------------------<a href="mars.html">M A R S</a>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"><div class="line">
+    <p>| | | | | | | | | | | | | | | | | | | | | | | | | </p></div>
+    </div>
+  <div class="content">
+        <div class="header"><p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"><div class="line">
+    <p>| | | | | | | <a href="earth2.html">E A R T H</a> | | | | | | | | </p></div>
+    </div>
+  <div class="content">
+        <div class="header"><p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"> <div class="line">
+    <p>| | | | | | | | | | | | | | | |</p></div>
+    </div>
+  <div class="content">
+        <div class="header"><p>----------<a href="mercury.html">M E R C U R Y</a>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .header --></div>
+  <div class="sidebar1"><div class="line">
+    <p>| | | | | | | | | |</p></div>
+    </div>
+  <div class="content">
+    <h1><a href="sol.html"><font color="#F1E934">The Sun</font></a></h1>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>--------------<a href="Venus.html">V E N U S</a>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <!-- end .footer --></div></div>
+  <div class="footerBelt">
+    <p>d s r s e e e t e e r o s i r t d r d d d t d t t o e t o i r a s e e t t e s e a r d s e i i s r a o i t o i s s r a d a d a d r i e o r r t d a t i a s a i a e i r d r r e o r s a o s a r s o e a o i o d d i t t t o o t t d a r i i o d d o i i s t s a i s e e t s t i a e e e o t a s o o t r r r e r e d a s t d e o t t t i d i a r a d a i a i d i s s s d d d e r a i o t t e d o a e t a o o e d a d r a s o d s d s i r o i d e t i o i o r e r s e a o s o r r s o i d t r a d i e e o o t i o a a t e o i i d e d a i d r t o i t i t d s i s r r a r a d o e r i a t a r e o a o t e t e o i e a r d o s r r d s e s o r o d i t s i o a t r o e s o a r s a o a s a t t r r a e e e i t d t d r d t r r s r d a o s a s d s i i s r o o o t e d t e i s e r d o i o i t t d d e e o a o i a a e r o a t o i t a o t s i d d o e a t s o o e t r r i i s o t t s t t e r i a r e a d d a d a o t s s r d a o o e r d i d e s a i e r t o e t e o s o e t r e a d i a r e r e e d s a t i e e e t e e o a d d a o i e t a r d s e e d o i s o d s s s t d d e e t o t e d e i e s o s a d o t o d t e d r a i e i i d a a t o e r o e a r e a a t o a e a o o t r t a t s a i a r t d r d t r t e a s o e r i t r r s i i a r r a r t t a o s i t <a href="404.html">v e s t a</a> o e r t a s o r o s d s s d e o a i i s d t r d i r d a t a i d e s d s t r r i d o s t r r o s t i o a d t t r a i r t a d d r a s i o t r d t r i o t e a r r t i s e r s d s i e o i o d o r t r s r e r i e r d i e i r e d a a a i i e i a e r i t o t o t r e e d r d i d t a t s e t s d a t a o t r e a d o i e s r e d s e s a i o t a o e e d a a t i d e e i o r o e a i t o o s t d i r s s a a t e r s o r a t a e e t o a r r s i s a a e o d d t d i s r r r o o s a t o i e r o i s o s d s s e s d t d e r i d d r s t s e i o o d e i o s e a e d i t e i o a t e a d i t i d i d o t d o a e d r d t d r o i s d a o i o t i i d o d d a s i a e r e t e t i a i s t d t i a r t t i a t e e i t a d e d d r d s a i e a t a e i s o r i s r t s d a a i i e e o r o e d i a d r o o r r s </p> 
+    <!-- end .footer --></div></div>
+  <!-- end .container --></div>
+</body>
+</html>

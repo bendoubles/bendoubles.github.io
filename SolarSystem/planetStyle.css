@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;	
+	text-align: center;
+
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 96px;
+}
+
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 48px;
+}
+
+h3 {
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 24px;
+}
+
+h5 {
+	font-family: 'Orbitron', sans-serif;
+	color: #333;
+	text-align: center;
+	font-size: 8px;
+}
+
+ul {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	list-style:none;
+	text-align:center;
+	padding:0;
+}
+
+
+
+
+a:link {
+	text-decoration:none;
+	color:#FFF;
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #F00;
+}	
+	
+.container {
+	background-color: #000000; 
+	margin: 0 auto;
+}
+
+.Ncontainer {
+	background-color: #000000; 
+	margin: 0 auto;
+	-ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+}
+
+.links {
+	width:auto;
+	margin: 0 auto;
+}
+
+.earth {
+	color: #00F;
+}
+
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	width: 15%;
+	margin: 0;
+}
+
+.grs {
+	width: 70%;
+	float:left;
+	background-color:#F63;
+	color:#FFF7E4;
+}
+
+.jred {
+	background-color:#F63;
+	color:#FFF7E4;
+	margin:0;
+}
+
+.jwhite {
+	color:#F63;
+	background-color:#FFF7E4;
+	margin: 0;
+}
+
+.jupiter {
+	width: 100%;
+	margin: 0 auto;
+	background-color:#F63;
+	height: 500px;
+}
+
+.photosphere {
+	background-color:#F1E934;
+	color:#FFE100;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.sunspot{
+	color:#000;
+	font-weight:700;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.moonStuff{
+	float:left;
+	width:20%;
+}
+
+.moon {
+	background-color:#CCC;
+	color:#999;
+	font-weight:900;
+}
+.satelites {
+	width: 45%;
+	float:left
+}
+
+.earth {
+	width: 35%;
+	float:left;
+	background-color:#33F;
+}
+
+.line {
+	margin: 0;
+	margin-right: 18%;
+	width: 5px;
+	height:100%;
+	float:left;
+}

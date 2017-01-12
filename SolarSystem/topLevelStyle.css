@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	border: opx;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	list-style:none;
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 96px;
+}
+
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 48px;
+}
+
+
+h3 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	font-size: 32px;
+}
+
+h4 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+
+h5 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+h6 {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}	
+
+p {		
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 0px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+	
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #F00;
+}

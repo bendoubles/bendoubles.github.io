@@ -43,3 +43,8 @@ a:visited {
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	color: #0d1;
 }
+
+.bar {
+	padding:20px;
+}
+	

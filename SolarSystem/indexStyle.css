@@ -56,3 +56,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .earth {
 	color: #00F;
 }
+
+#container{
+	width:950px;
+	
+}

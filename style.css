@@ -59,6 +59,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width:475px;
 	float:left;
 	margin: 10px;
+	height:100%;
 }
 #social {
 	float:left;

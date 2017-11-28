@@ -1,77 +1,110 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+@media screen and (min-width: 600px) {
+	
+
+}
+
+@media screen and (min-width: 600px) {
+	
+
+}
+
 body {
-	background-image:url(william-wilson-17-1-ben-s-artwork4.jpg);
-	font-family: Roboto, sans-serif;
-	color: #FFFFFF;	
-	max-width:1920px;
-	max-height:1920px;
+	background-color: #34213c;
+	font-family: Open Sans Condensed, sans-serif;
+	color:#fff;
 	margin:0;
-	overflow: hidden;
 }
 
 h1 {
 	color:white;
-	font-family: 'Merriweather', serif;
+	margin:0;
+	padding-top:12px;
+	padding-bottom:0px;
+	font-family: Nexa_Slab_Regular_Free, Arial, Helvetica, sans-serif;
+	font-size:48px;
 	
 }
 
 h2 {
-	color:#D8EDC2;
-	font-family:Roboto, sans-serif;
+	color:inherit;
+	margin:0;
+	padding:0;
+	font-family:Nexa_Slab_Bold_Free, Arial, Helvetica, sans-serif;
+}
 
+h3 {
+	color:inherit;
+	margin:0;
+	padding:0;
 }
 
 p {
-	color:white;
-	font-family:Roboto, sans-serif;
+	margin:0;
+	padding-top:42px;
+	padding-bottom:0px;
 }
 
-a {
-	color:white;
-	
-	font-family:Roboto, sans-serif;
+a {	
+    color: #060012;
 }
 
 a:link {
-	color: #FFFFFF;
 	text-decoration:none;
 }
 a:visited {
-	color: #FFFFFF;
 	text-decoration:none;
 }
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+a:hover, a:active, a:focus {
 	color: #0d1;
-}
-
-.bar {
-
 }
 
 #header {
 	width: 100%;
-	float: left;
-	height:10%;
+	background-color:#fff;
+	color:#06380A;
+	top:0;
+	left:0;
+	position:fixed;
+	z-index:10;
 }
-#logo {
-	width:475px;
-	float:left;
-	margin: 10px;
-	height:100%;
-}
-#social {
-	float:left;
-	text-align:right;
-	width:475px;
+
+
+#nav {
+	margin:auto;
+	max-width:1100px;
+	font-weight:700;
 }	
 
+#nav h1{
+	width:35%;
+	min-width:290px;
+	height: 100%;
+	text-align:left;
+	float:left;
+}
+#nav p{
+	width:65%;
+	height: 100%;
+	text-align:right;
+	float:left;
+}		
+
 #container{
-	background-color: #080019;
-	width:950px;
-	margin: 0 auto; 
-	height:100vh;
+	background-color: #99a999;
+	padding: 113px 50px 0 50px;
+	margin-top:100px;
+	margin:auto;
+	max-width:1000px;
+	width:80%;
+	overflow:auto;
+	min-height: 70%;
+    min-height: -webkit-calc(100vh - 213px);
+    min-height: -moz-calc(100vh - 213px);
+    min-height: calc(100vh - 213px);
 }
 
 .divider{
@@ -83,16 +116,66 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 #main{
 	width:100%;
-	float:left;
 	height:80%;
 	text-align:center;
 }
 
 #footer{
-	width: 100%;
-	float: left;
-	height:10%;
-	margin:0;
+	max-width:1000px;
+	width:80%;
+	margin: auto;	
 	text-align:center;
+	background-color:#fff;
+	padding: 0 50px;
+	clear:left;
+	height:100px;
+	color:#060012;
 }
 
+.content{
+	width:244px;
+	height:494px;
+	padding:3px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	transition: .5s ease;
+
+}
+.content:hover{
+	background-color:#fff;
+	color:#0d1;
+}
+
+.content img:hover{
+	-webkit-filter:none;
+	filter:none;
+}
+
+
+.content img{
+	width:244px;
+	float:left;
+	position:relative;
+	-webkit-filter:brightness(30%);
+	filter:brightness(30%);
+	transition: .5s ease;
+}
+
+
+.content h3{
+	position:absolute;
+	top: 170px;
+	width:210px;
+    text-align: center;
+	text-decoration:none;
+	color:white;
+	margin:20px;
+}
+
+.contentLink{
+	width:245px;
+	height: 500px;
+	float:left;
+	position:relative;
+}

@@ -1,74 +1,74 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 <head>
 <meta charset="utf-8">
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>bendoubles</title>
-<!-- InstanceEndEditable -->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="nexaslab_boldfree_macroman/stylesheet.css">
-<link rel="stylesheet" href="nexaslab_regularfree_macroman/stylesheet.css">
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../nexaslab_boldfree_macroman/stylesheet.css">
+<link rel="stylesheet" href="../nexaslab_regularfree_macroman/stylesheet.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body>
   <div id="header">
     <div id="nav">
-      <h1><a href="index.html">bendoubles</a></h1>  
+      <h1><a href="../index.html">bendoubles</a></h1>  
       <p>
-      <a href="vectorArt.html">Vector Art</a>
+      <a href="../vectorArt.html">Vector Art</a>
       |
-      <a href="fonts.html">Fonts</a>
+      <a href="../fonts.html">Fonts</a>
       |
-      <a href="SolarSystem/innerSolar.html">Solar System</a>
+      <a href="../SolarSystem/innerSolar.html">Solar System</a>
       |
-      <a href="worldBuilding.html">Worldbuilding</a>
+      <a href="../worldBuilding.html">Worldbuilding</a>
       |
-      <a href="aboutMe.html">About Me</a>
+      <a href="../aboutMe.html">About Me</a>
       </p>
     </div>      
   </div>
   
   <div id="container">
-  <!-- InstanceBeginEditable name="MainContent" -->
+  <!-- TemplateBeginEditable name="MainContent" -->
     <h2>Galleries and Projects</h2>
     <div class="content">
-      <a href="SolarSystem/innerSolar.html">
-        <img src="SolarSystemLink.png"  alt="">
+      <a href="../SolarSystem/innerSolar.html">
+        <img src="../SolarSystemLink.png"  alt="">
         <h3>
         Solar System
         </h3>
       </a>
     </div>
     <div class="content">
-      <a href="fonts.html">
-        <img src="FontLink.png">
+      <a href="../fonts.html">
+        <img src="../FontLink.png">
         <h3>
         Fonts
         </h3>
       </a>
     </div>
     <div class="content">
-      <a href="worldBuilding.html">
-        <img src="WorldBuildingLink.jpg">
+      <a href="../worldBuilding.html">
+        <img src="../WorldBuildingLink.jpg">
         <h3>
         World Building
         </h3>
       </a>
     </div>
     <div class="content">
-      <a href="vectorArt.html">
-        <img src="VectorArtLink.png" alt="">
+      <a href="../vectorArt.html">
+        <img src="../VectorArtLink.png" alt="">
         <h3>
         Vector Art
         </h3>
       </a>
     </div>
     
-  <!-- InstanceEndEditable -->
+  <!-- TemplateEndEditable -->
   </div>
 
   <div id="footer">
@@ -84,4 +84,4 @@
     </p>
   </div>
 </body>
-<!-- InstanceEnd --></html>
+</html>

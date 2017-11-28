@@ -2,15 +2,6 @@
 /* CSS Document */
 
 
-@media screen and (min-width: 600px) {
-	
-
-}
-
-@media screen and (min-width: 600px) {
-	
-
-}
 
 body {
 	background-color: #34213c;
@@ -44,8 +35,6 @@ h3 {
 
 p {
 	margin:0;
-	padding-top:42px;
-	padding-bottom:0px;
 }
 
 a {	
@@ -91,6 +80,8 @@ a:hover, a:active, a:focus {
 	height: 100%;
 	text-align:right;
 	float:left;
+	padding-top:42px;
+	padding-bottom:0px;
 }		
 
 #container{
@@ -105,6 +96,7 @@ a:hover, a:active, a:focus {
     min-height: -webkit-calc(100vh - 213px);
     min-height: -moz-calc(100vh - 213px);
     min-height: calc(100vh - 213px);
+	font-family: Open Sans, sans-serif;
 }
 
 .divider{
@@ -126,10 +118,14 @@ a:hover, a:active, a:focus {
 	margin: auto;	
 	text-align:center;
 	background-color:#fff;
-	padding: 0 50px;
+	padding: 20px 50px 0 50px;
 	clear:left;
-	height:100px;
+	height:80px;
 	color:#060012;
+}
+
+#footer p{
+	padding: 5px;
 }
 
 .content{
@@ -183,4 +179,9 @@ a:hover, a:active, a:focus {
 img {
 	width: 100%;
 	 
+}
+
+@media screen and (max-width: 600px) {
+	
+
 }

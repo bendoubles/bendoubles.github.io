@@ -86,7 +86,7 @@ a:hover, a:active, a:focus {
 
 #container{
 	background-color: #99a999;
-	padding: 113px 50px 0 50px;
+	padding: 113px 50px 50px 50px;
 	margin-top:100px;
 	margin:auto;
 	max-width:1000px;
@@ -128,46 +128,64 @@ a:hover, a:active, a:focus {
 	padding: 5px;
 }
 
+.section{
+	margin:auto;
+	text-align:center;
+}
+
+
 .content{
 	width:244px;
 	height:494px;
 	padding:3px;
-	float:left;
 	position:relative;
 	overflow:hidden;
-	transition: .5s ease;
-
+	transition: .3s ease;
+	display:inline-block;
+	margin: 0;
 }
+
 .content:hover{
 	background-color:#fff;
 	color:#0d1;
 }
 
-.content img:hover{
-	-webkit-filter:none;
-	filter:none;
-}
 
 
 .content img{
 	width:244px;
 	float:left;
 	position:relative;
-	-webkit-filter:brightness(30%);
-	filter:brightness(30%);
-	transition: .5s ease;
+}
+
+.contentImage{
+	width:244px;
+	height: 494px;
 }
 
 
-.content h3{
+.contentHover{
 	position:absolute;
-	top: 170px;
-	width:210px;
+	top: 3px;
+	left: 3px;
+	width: 244px;
+	height: 494px;
+	background-color: rgba(0,0,0,.7);
     text-align: center;
 	text-decoration:none;
 	color:white;
-	margin:20px;
+	transition: .3s ease;
 }
+
+.contentHover h3{
+	margin-top: 200px;
+}
+
+
+.contentHover:Hover{
+	opacity: 0;	
+}
+
 
 .contentLink{
 	width:245px;
@@ -180,6 +198,7 @@ img {
 	width: 100%;
 	 
 }
+
 
 @media screen and (max-width: 600px) {
 	

@@ -184,7 +184,7 @@ a:hover, a:active, a:focus {
 }
 
 
-.contentHover:Hover{
+.contentHover:Hover, .contentHover:Active, .contentHover:Focus{
 	opacity: 0;	
 }
 
@@ -202,7 +202,7 @@ img {
 }
 
 
-@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio : 2) {
+@media screen and (max-width: 600px){
 	body {
 		background-color: #34213c;
 		font-family: Open Sans Condensed, sans-serif;

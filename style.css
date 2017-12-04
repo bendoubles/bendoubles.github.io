@@ -3,6 +3,9 @@
 
 
 
+
+
+
 body {
 	background-color: #34213c;
 	font-family: Open Sans Condensed, sans-serif;
@@ -16,7 +19,7 @@ h1 {
 	padding-top:12px;
 	padding-bottom:0px;
 	font-family: Nexa_Slab_Bold_Free, Arial, Helvetica, sans-serif;
-	font-size:48px;
+	font-size:3rem;
 	font-weight: normal;
 }
 
